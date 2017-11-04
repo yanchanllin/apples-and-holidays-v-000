@@ -80,8 +80,9 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_hash.collect do |season,holiday|
     holiday.collect do |supply|
+      binding.pry
       if supply == "BBQ"
-        binding.pry
+        
       return holiday
   end
     end
